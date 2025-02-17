@@ -45,8 +45,8 @@
 
     .dice {
         margin: 0;
-        font-size: 100px;
-        margin: 20px auto;
+        font-size: 200px;
+        margin: 40px auto;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -59,7 +59,7 @@
         font-size: 18px;
         margin: 0;
         position: absolute;
-        top: 55%;
+        top: 60%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
