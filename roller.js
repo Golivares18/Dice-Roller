@@ -6,3 +6,5 @@ function rollDice() {
 
 window.onload = rollDice; // Roll dice when page loads
 
+var lastModified = document.lastModified;
+document.getElementById("modified").innerHTML = lastModified;
