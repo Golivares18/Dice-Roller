@@ -6,5 +6,3 @@ function rollDice() {
 
 window.onload = rollDice; // Roll dice when page loads
 
-let text = document.lastModified;
-document.getElementById("demo").innerHTML = text;
