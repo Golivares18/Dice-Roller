@@ -1,42 +1,41 @@
+// Try changing the capitalization of the the function name.
+// Try changing "x" to "X" in the difference calculation.
 
+function RollSixSidedDice() {
+    document.getElementById("dice").value = Math.floor(Math.random()*6) + 1;
+}
 
-    // Player name
-    var player1 = "Player 1";
-    var player2 = "Player 2";
+function DoCalculations() {
+    x = document.getElementById("xID").value;
+    y = document.getElementById("yID").value;
+    console.log("x="+x+" and y="+y);
 
-    // Function to change the player name
-    function editNames() {
-        player1 = prompt("Change Player1 name");
-        player2 = prompt("Change player2 name");
+    x = Number(x);
+    y = Number(y);
 
-        document.querySelector("p.Player1").innerHTML = player1;
-        document.querySelector("p.Player2").innerHTML = player2;
+    sum = x+y;
+    difference = x-y;
+    product = x*y;
+    quotient = x/y;
+    test = "2" + 5;
+
+    mathResults = "sum="+sum+"<br>";
+    mathResults += "difference="+difference+"<br>";
+    mathResults += "product="+product+"<br>";
+    mathResults += "quotient="+quotient+"<br>";
+    mathResults += "test="+test+"<br>";
+    document.getElementById("mathResultsID").innerHTML = mathResults;
+
+    var a = 7;
+    var b = 2;
+    if (a  == b || a > 5) {
+        console.log("123");
+        if (b > 3 && a < 8) {
+            console.log("456");
+        } else {
+            console.log("789");
+        }
+        if (a+b > 9)
+        console.log("10");
     }
-
-    // Function to roll the dice
-    function rollTheDice() {
-        setTimeout(function () {
-            var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-            var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-            document.querySelector(".img1").setAttribute("src",
-                "dice" + randomNumber1 + ".png");
-
-            document.querySelector(".img2").setAttribute("src",
-                "dice" + randomNumber2 + ".png");
-
-            if (randomNumber1 === randomNumber2) {
-                document.querySelector("h1").innerHTML = "Draw!";
-            }
-
-            else if (randomNumber1 < randomNumber2) {
-                document.querySelector("h1").innerHTML
-                                = (player2 + " WINS!");
-            }
-
-            else {
-                document.querySelector("h1").innerHTML
-                                = (player1 + " WINS!");
-            }
-        }, 2500);
-    }
+}
