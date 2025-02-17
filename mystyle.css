@@ -49,16 +49,17 @@
         position:absolute;
         top: 50%;
         left: 50%;
-        -ms-transform: translateY(-40%, -40%);
-        transform: translateY(-40%, -40%);
+        -ms-transform: translateY(-30%,-30%);
+        transform: translateY(-30%, -30%);
 
     }
     button {
         padding: 10px 20px;
         font-size: 18px;
         cursor: pointer;
+        position:absolute;
         top: 50%;
         left: 50%;
-        -ms-transform: translateY(-40%, 40%);
-        transform: translateY(-40%, -50%);
+        -ms-transform: translateY(-30%, -30%);
+        transform: translateY(-30%, -30%);
     }
